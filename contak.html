@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Italianno&family=Lobster&family=Pacifico&family=Style+Script&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            italiano: ["Italianno", "cursive"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+    <header class="flex justify-between bg-red-500 p-5 px-10 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+        <h1 class="font-extrabold font-italiano text-3xl "> Hilda Amalia </h1>
+        <nav class="space-x-6">
+          <a class="border py-2 px-6  hover:bg-yellow-300" href="index.html">Beranda</a> 
+          <a class="border py-2 px-6  hover:bg-yellow-300" href="/tentang.html">Tentang</a>
+          <a class=" border py-2 px-6  hover:bg-yellow-300" href="/contak.html">Contak</a>
+        </nav>
+      </header>
+      <header>
+        <main>
+            <h2 class="text-center font-extrabold font-mono text-2xl">Contact Me</h2>
+            <form class=" ">
+              <div class=" flex flex-col m-4 gap-4" >
+                <div class="flex flex-col md:flex-row gap-4">
+                  <input type="text" id= "name" placeholder="first name" class="border w-full rounded-md border-black border-solid p-4">
+                  <input type="text" id="name" placeholder=" last name" class=" border w-full rounded md border-black border-solid p-4">
+                </div>
+                <input type="email" id="email" name="email" placeholder="email" class="border w-full rounded-md border-black border-solid p-4">
+                <input type="massage" id="massagge" placeholder=" Massage" class=" border w-full rounded-md border-black border-solid p-20 w-80 h-80">
+                <input type="number" id="number" placeholder=" numer phone" class=" border w-full rounded-md border-black border-solid p-4"> 
+                <div>
+                  <button class=" font-extrabold border w-full text-black hover:bg-yellow-400 border py-4 px-6" type="submit">Kirim</button>
+                </div>
+
+              </div>
+            </form>
+          </main>
+      </header>
+      <footer>
+        <p class=" bg-slate-500 font-medium text-white font-mono">&copy; Hilda Amalia 2024</p>
+      </footer>
+</body>
+</html>
